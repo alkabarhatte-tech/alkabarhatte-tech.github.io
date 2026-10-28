@@ -1,0 +1,893 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dr. Alka Surendra Barhatte | Assistant Professor, MIT-WPU Pune</title>
+<meta name="description" content="Academic website of Dr. Alka Surendra Barhatte, Assistant Professor in the Department of Electrical and Electronics Engineering, Dr. Vishwanath Karad MIT World Peace University, Pune. AI and machine learning, biomedical signal processing, automotive electronics, IoT.">
+<meta property="og:title" content="Dr. Alka Surendra Barhatte, Assistant Professor, MIT-WPU Pune">
+<meta property="og:description" content="Research, teaching, publications and PhD supervision in AI, biomedical signal processing, automotive electronics and IoT.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23fbfcfc'/%3E%3Cpath d='M4 36h14l5-10 6 26 6-40 6 24h19' fill='none' stroke='%23c8263f' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<script>document.documentElement.className+=' js'</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,400..600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "name":"Alka Surendra Barhatte",
+  "honorificPrefix":"Dr.",
+  "jobTitle":"Assistant Professor",
+  "affiliation":{"@type":"CollegeOrUniversity","name":"Dr. Vishwanath Karad MIT World Peace University","address":{"@type":"PostalAddress","addressLocality":"Pune","addressRegion":"Maharashtra","addressCountry":"IN"}},
+  "email":"mailto:alka.barhatte@mitwpu.edu.in",
+  "knowsAbout":["Artificial intelligence","Machine learning","Biomedical signal processing","Automotive electronics","Internet of Things"],
+  "sameAs":["https://scholar.google.com/citations?user=qMYzU18AAAAJ&hl=en","https://in.linkedin.com/in/dr-alka-barhatte-b3830837","https://www.youtube.com/@alkabarhatte544","https://mitwpu.edu.in/faculty/alka-surendra-barhatte"]
+}
+</script>
+<style>
+  :root{
+    --paper:#fbfcfc;
+    --grid-minor:#f7e9eb;
+    --grid-major:#f1d6da;
+    --ink:#18212f;
+    --muted:#566174;
+    --trace:#c8263f;
+    --link:#0f6a73;
+    --link-soft:#e1f0f0;
+    --rule:#e2dadc;
+    --sheet:#ffffff;
+    --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+    --sans:"Bricolage Grotesque","Segoe UI",system-ui,-apple-system,Roboto,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    font-family:var(--serif);font-size:1.06rem;line-height:1.7;color:var(--ink);
+    background-color:var(--paper);
+    background-image:
+      linear-gradient(var(--grid-major) 1px,transparent 1px),
+      linear-gradient(90deg,var(--grid-major) 1px,transparent 1px),
+      linear-gradient(var(--grid-minor) 1px,transparent 1px),
+      linear-gradient(90deg,var(--grid-minor) 1px,transparent 1px);
+    background-size:60px 60px,60px 60px,12px 12px,12px 12px;
+    background-attachment:fixed;
+  }
+  a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:1px}
+  a:hover{color:var(--trace)}
+  :focus-visible{outline:3px solid var(--link);outline-offset:3px;border-radius:3px}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+
+  /* ---------- top bar and tabs ---------- */
+  .top{position:sticky;top:0;z-index:20;background:rgba(251,252,252,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule)}
+  .top .wrap{display:flex;align-items:center;gap:26px}
+  .brand{font:700 1.05rem/1 var(--sans);color:var(--ink);text-decoration:none;white-space:nowrap;padding:18px 0;letter-spacing:-.01em}
+  .brand:hover{color:var(--ink)}
+  .tabs{position:relative;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;flex:0 1 auto;margin-left:auto;min-width:0}
+  .tabs::-webkit-scrollbar{display:none}
+  .tabs a{font:500 .93rem/1 var(--sans);color:var(--muted);text-decoration:none;padding:19px 10px 16px;border-bottom:3px solid transparent;white-space:nowrap}
+  .tabs a:hover{color:var(--ink)}
+  .tabs a[aria-selected="true"]{color:var(--ink);font-weight:700;border-bottom-color:var(--trace)}
+
+  /* ---------- page headers ---------- */
+  .panel{padding:0 0 70px;scroll-margin-top:64px}
+  .js .panel:not(.on){display:none}
+  .page-head{padding:54px 0 28px}
+  .page-head h2{font:700 clamp(2rem,5vw,3.1rem)/1.08 var(--sans);letter-spacing:-.025em}
+  .page-head p{margin-top:10px;max-width:58ch;color:var(--muted);font-size:1.1rem}
+
+  /* ---------- sheet: white paper over the ECG grid ---------- */
+  .sheet{background:var(--sheet);border:1px solid var(--rule);border-radius:6px;padding:34px clamp(20px,4vw,44px);box-shadow:0 1px 0 rgba(24,33,47,.04)}
+  .sheet + .sheet{margin-top:22px}
+  h3{font:700 1.3rem/1.25 var(--sans);letter-spacing:-.01em;margin:0 0 14px}
+  h4{font:700 1.02rem/1.3 var(--sans);margin:0 0 4px}
+  .sheet > h3:not(:first-child){margin-top:34px}
+  p + p{margin-top:12px}
+  .muted{color:var(--muted)}
+  .small{font-size:.95rem}
+  .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:34px}
+
+  /* ---------- hero ---------- */
+  .hero{padding:58px 0 8px}
+  .hero-top{display:grid;grid-template-columns:minmax(0,1fr) 270px;gap:44px;align-items:start}
+  .hero h1{font:800 clamp(2.5rem,7.4vw,5.1rem)/.98 var(--sans);letter-spacing:-.035em}
+  .hero h1 span{display:block;font-weight:300;font-size:.46em;letter-spacing:-.01em;margin-bottom:10px;color:var(--muted)}
+  .role{margin-top:20px;font:500 1.12rem/1.45 var(--sans);max-width:34ch}
+  .side{min-width:0}
+  .facts{background:var(--sheet);border:1px solid var(--rule);border-radius:6px;padding:20px 22px;font-size:.96rem;line-height:1.45}
+  .facts div{padding:9px 0;border-bottom:1px solid var(--rule)}
+  .facts div:first-child{padding-top:0}
+  .facts div:last-child{border-bottom:0;padding-bottom:0}
+  .facts dt{font:700 .86rem/1.2 var(--sans);color:var(--muted);margin-bottom:2px}
+  .facts dd{margin:0}
+  .avatar{position:relative;width:96px;height:96px;border-radius:50%;background:var(--link-soft);color:var(--link);display:flex;align-items:center;justify-content:center;font:700 1.9rem/1 var(--sans);overflow:hidden;margin-bottom:16px;border:2px solid var(--sheet);box-shadow:0 0 0 1px var(--rule)}
+  .avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+  /* the one bold element: an ECG trace, annotated */
+  .trace{margin:34px 0 6px}
+  .trace svg{display:block;width:100%;height:auto;overflow:visible}
+  .trace path{fill:none;stroke:var(--trace);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 2.6s cubic-bezier(.5,.1,.3,1) .2s forwards}
+  .trace text{font:600 13px var(--sans);fill:var(--trace);opacity:0;animation:fadein .6s ease 2.4s forwards}
+  @keyframes draw{to{stroke-dashoffset:0}}
+  @keyframes fadein{to{opacity:1}}
+  @media (prefers-reduced-motion:reduce){
+    .trace path{animation:none;stroke-dashoffset:0}
+    .trace text{animation:none;opacity:1}
+    html{scroll-behavior:auto}
+  }
+  .trace-cap{font:500 .9rem/1.4 var(--sans);color:var(--muted)}
+
+  .intro{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:40px;margin-top:26px;align-items:start}
+  .intro p{max-width:62ch}
+  .btns{display:flex;gap:10px;flex-wrap:wrap}
+  .btn{display:inline-block;font:600 .96rem/1 var(--sans);padding:12px 18px;border-radius:5px;text-decoration:none;border:1.5px solid var(--ink);color:var(--ink);background:transparent}
+  .btn:hover{background:var(--ink);color:var(--sheet)}
+  .btn.solid{background:var(--ink);color:var(--sheet)}
+  .btn.solid:hover{background:var(--trace);border-color:var(--trace)}
+
+  /* ---------- lists ---------- */
+  .ruled{list-style:none}
+  .ruled > li{padding:14px 0 14px 18px;border-left:3px solid var(--rule);margin-bottom:6px}
+  .ruled > li:hover{border-left-color:var(--trace)}
+  .ruled .when{font:700 .88rem/1.3 var(--sans);color:var(--trace);display:block;margin-bottom:2px}
+  .plain{list-style:none}
+  .plain li{padding:8px 0;border-bottom:1px solid var(--rule)}
+  .plain li:last-child{border-bottom:0}
+  .bullets{padding-left:1.15rem}
+  .bullets li{margin:6px 0}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none}
+  .chips li{font:500 .9rem/1 var(--sans);background:var(--link-soft);color:#0b4f56;padding:8px 12px;border-radius:99px}
+
+  .tl{list-style:none;position:relative;padding-left:26px}
+  .tl::before{content:"";position:absolute;left:6px;top:8px;bottom:8px;width:2px;background:var(--rule)}
+  .tl > li{position:relative;padding:0 0 22px}
+  .tl > li::before{content:"";position:absolute;left:-26px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--sheet);border:3px solid var(--trace)}
+  .tl .when{font:700 .9rem/1.3 var(--sans);color:var(--trace);display:block}
+  .tl h4{margin-top:1px}
+
+  table{width:100%;border-collapse:collapse;font-size:.98rem}
+  th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--rule);vertical-align:top}
+  th{font:700 .88rem/1.2 var(--sans);color:var(--muted);background:#f7f4f5}
+  .tbl-wrap{overflow-x:auto}
+
+  /* ---------- publications ---------- */
+  .filters{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 24px}
+  .filters button{font:600 .92rem/1 var(--sans);padding:10px 15px;border-radius:99px;border:1.5px solid var(--rule);background:var(--sheet);color:var(--ink);cursor:pointer}
+  .filters button:hover{border-color:var(--ink)}
+  .filters button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--sheet)}
+  .pubgroup[hidden]{display:none}
+  .pubgroup + .pubgroup{margin-top:34px}
+  .pubs{list-style:none}
+  .pubs li{display:grid;grid-template-columns:58px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid var(--rule)}
+  .pubs li:last-child{border-bottom:0}
+  .pubs .yr{font:700 1rem/1.5 var(--sans);color:var(--trace)}
+  .pubs .cite{font-size:1rem;line-height:1.55}
+  .pubs .cite i{font-style:italic}
+  .pubs .meta{margin-top:7px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+  .tag{font:600 .78rem/1 var(--sans);background:#f3eff0;color:var(--muted);padding:5px 8px;border-radius:4px}
+  .doi{font:600 .86rem/1 var(--sans)}
+
+  .video{position:relative;aspect-ratio:16/9;border-radius:6px;overflow:hidden;background:#0d1320;border:1px solid var(--rule)}
+  .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+  .links{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+  .links a{display:block;padding:14px 16px;border:1.5px solid var(--rule);border-radius:6px;text-decoration:none;color:var(--ink);font:600 1rem/1.3 var(--sans)}
+  .links a small{display:block;font:400 .86rem/1.3 var(--sans);color:var(--muted);margin-top:3px}
+  .links a:hover{border-color:var(--trace)}
+
+  footer{border-top:1px solid var(--rule);background:rgba(251,252,252,.95);padding:26px 0;font:400 .92rem/1.5 var(--sans);color:var(--muted)}
+
+  @media (max-width:860px){
+    .hero-top,.intro{grid-template-columns:1fr}
+    .facts{max-width:420px}
+    .top .wrap{gap:10px}
+    .brand{font-size:.95rem}
+  }
+  @media (max-width:560px){
+    .top .wrap{flex-direction:column;align-items:stretch;gap:0}
+    .brand{padding:12px 0 2px}
+    .tabs{margin-left:0}
+    .tabs a{padding:12px 10px 10px}
+    .pubs li{grid-template-columns:1fr;gap:2px}
+    .trace text{display:none}
+    table{min-width:540px}
+    .panel{scroll-margin-top:92px}
+  }
+
+  /* tabs only when scripting is on; without it, everything shows in one long page */
+  @media print{
+    .top,.filters,.trace{display:none}
+    .js .panel:not(.on){display:block}
+    body{background:#fff}
+    .sheet{border:0;padding:0}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#home">Dr. Alka Barhatte</a>
+    <nav class="tabs" role="tablist" aria-label="Sections">
+      <a href="#home" role="tab" data-tab="home">Home</a>
+      <a href="#about" role="tab" data-tab="about">About</a>
+      <a href="#research" role="tab" data-tab="research">Research</a>
+      <a href="#publications" role="tab" data-tab="publications">Publications</a>
+      <a href="#teaching" role="tab" data-tab="teaching">Teaching</a>
+      <a href="#supervision" role="tab" data-tab="supervision">Supervision</a>
+      <a href="#projects" role="tab" data-tab="projects">Projects</a>
+      <a href="#service" role="tab" data-tab="service">Service</a>
+      <a href="#training" role="tab" data-tab="training">Training</a>
+      <a href="#contact" role="tab" data-tab="contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ======================= HOME ======================= -->
+<section class="panel" id="home" role="tabpanel" aria-label="Home">
+  <div class="wrap">
+    <div class="hero">
+      <div class="hero-top">
+        <div>
+          <h1><span>Dr.</span>Alka Surendra Barhatte</h1>
+          <p class="role">Assistant Professor of Electrical and Electronics Engineering, teaching and researching AI, biomedical signals and automotive electronics.</p>
+        </div>
+        <aside class="side">
+          <div class="avatar" aria-hidden="true">AB<img src="photo.jpg" alt="" onerror="this.remove()"></div>
+          <dl class="facts" aria-label="At a glance">
+            <div><dt>Position</dt><dd>Assistant Professor since July 2003</dd></div>
+            <div><dt>University</dt><dd>Dr. Vishwanath Karad MIT World Peace University, Pune</dd></div>
+            <div><dt>PhD</dt><dd>Electronics and Telecommunication, SPPU, 2020</dd></div>
+            <div><dt>Supervision</dt><dd>Approved PhD supervisor</dd></div>
+          </dl>
+        </aside>
+      </div>
+
+      <figure class="trace" aria-label="An annotated ECG trace: P wave, QRS complex, T wave">
+        <svg viewBox="0 0 1200 150" preserveAspectRatio="none" role="img" aria-hidden="true">
+          <path pathLength="1" d="M0,100 h40 c15,0 20,-16 35,-16 c15,0 20,16 35,16 h20 l10,8 l18,-90 l18,110 l12,-28 h32 c20,0 30,-34 55,-34 c25,0 35,34 55,34 h60 h40 c15,0 20,-16 35,-16 c15,0 20,16 35,16 h20 l10,8 l18,-90 l18,110 l12,-28 h32 c20,0 30,-34 55,-34 c25,0 35,34 55,34 h60 h40 c15,0 20,-16 35,-16 c15,0 20,16 35,16 h20 l10,8 l18,-90 l18,110 l12,-28 h32 c20,0 30,-34 55,-34 c25,0 35,34 55,34 h60"/>
+          <text x="75" y="70" text-anchor="middle">P</text>
+          <text x="158" y="10" text-anchor="middle">QRS</text>
+          <text x="275" y="52" text-anchor="middle">T</text>
+        </svg>
+        <figcaption class="trace-cap">My PhD work detects cardiac events from the shape of this signal.</figcaption>
+      </figure>
+
+      <div class="intro">
+        <div>
+          <p>I have taught at MIT World Peace University for more than two decades, mostly programming, data structures, machine learning and automotive electronics. My research started with ECG analysis and neuro-fuzzy classification, and now covers deep learning for transportation, healthcare and edge devices.</p>
+          <p>This site collects my research, publications, courses, student projects and academic service in one place.</p>
+        </div>
+        <div>
+          <div class="btns">
+            <a class="btn solid" href="#publications">Read my publications</a>
+            <a class="btn" href="#contact">Get in touch</a>
+          </div>
+          <p class="small muted" style="margin-top:16px">Profiles: <a href="https://scholar.google.com/citations?user=qMYzU18AAAAJ&hl=en">Google Scholar</a>, <a href="https://in.linkedin.com/in/dr-alka-barhatte-b3830837">LinkedIn</a>, <a href="https://www.youtube.com/@alkabarhatte544">YouTube</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sheet" style="margin-top:34px">
+      <h3>What I work on</h3>
+      <ul class="chips">
+        <li>Artificial intelligence and machine learning</li>
+        <li>Deep neural networks</li>
+        <li>Biomedical signal processing</li>
+        <li>Soft computing and neuro-fuzzy systems</li>
+        <li>Automotive electronics and electric vehicles</li>
+        <li>IoT and edge AI</li>
+        <li>Data structures and algorithms</li>
+      </ul>
+    </div>
+
+    <div class="sheet">
+      <h3>Recent</h3>
+      <ul class="ruled">
+        <li><span class="when">2026</span>Attended the Tata Technologies TTL Techpulse-2026 train-the-trainer programme on in-vehicle communication and model-based design, with hands-on work in Vector CANoe and MATLAB Simulink.</li>
+        <li><span class="when">2025</span>Mentored the hardware-track team that represented MIT-WPU at the Smart India Hackathon 2025 Grand Finale.</li>
+        <li><span class="when">2025</span>Co-authored &ldquo;Detection of Postpartum Depression using Machine Learning&rdquo; in the Journal of Information Systems Engineering and Management.</li>
+        <li><span class="when">January 2025</span>Organised a one-week faculty development programme on designing edge-AI applications with STM32 at the department.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= ABOUT ======================= -->
+<section class="panel" id="about" role="tabpanel" aria-label="About">
+  <div class="wrap">
+    <div class="page-head">
+      <h2>About</h2>
+      <p>An engineering educator who likes to put a working lab behind every lecture.</p>
+    </div>
+
+    <div class="sheet">
+      <p>Dr. Alka Surendra Barhatte is an Assistant Professor in the Department of Electrical and Electronics Engineering at Dr. Vishwanath Karad MIT World Peace University, Pune, where she has taught since 2003. She teaches programming, data structures, artificial intelligence and machine learning to undergraduate and postgraduate students.</p>
+      <p>She runs the department's software programming labs, built its automotive electronics lab, and has designed more than a dozen course syllabi. Her PhD, from Savitribai Phule Pune University in 2020, was on detecting and classifying cardiac events with a neuro-fuzzy approach. She is an approved PhD supervisor and has guided more than 40 student projects.</p>
+    </div>
+
+    <div class="sheet">
+      <div class="cols">
+        <div>
+          <h3>Education</h3>
+          <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>Degree</th><th>Institution</th><th>Year</th></tr></thead>
+            <tbody>
+              <tr><td>PhD, Electronics and Telecommunication</td><td>Savitribai Phule Pune University</td><td>2020</td></tr>
+              <tr><td>ME, Electronics (VLSI Design)</td><td>Bharati Vidyapeeth (Deemed) University, Pune</td><td>2006</td></tr>
+              <tr><td>BE, Electronics</td><td>Dr. Babasaheb Ambedkar Marathwada University, Aurangabad</td><td>1998</td></tr>
+            </tbody>
+          </table>
+          </div>
+          <p class="small muted" style="margin-top:14px"><strong>Thesis:</strong> Cardiac Event Detection and Pattern Classification using Neuro-Fuzzy Approach. Guide: Dr. Manisha Dale.</p>
+        </div>
+        <div>
+          <h3>Experience</h3>
+          <ul class="tl">
+            <li><span class="when">July 2003 to present</span><h4>Assistant Professor</h4>Dr. Vishwanath Karad MIT World Peace University, Pune</li>
+            <li><span class="when">2001</span><h4>Trainee Engineer</h4>Twin Engineers Pvt. Ltd., Pune</li>
+            <li><span class="when">1999 to 2000</span><h4>Instructor</h4>Synergy Infotech, a C-DAC authorised training centre</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="sheet">
+      <div class="cols">
+        <div>
+          <h3>Recognition</h3>
+          <ul class="plain">
+            <li><strong>KPIT NOVA Faculty Champion Award</strong> from KPIT Technologies, with a cash prize of Rs. 25,000.</li>
+            <li>Featured in an all-Marathi newspaper for developing the Remotely Driven Multiutility Electric Vehicle.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Tools and languages</h3>
+          <ul class="chips">
+            <li>Python</li><li>C</li><li>C++</li><li>Java</li><li>Embedded C</li><li>MATLAB</li><li>Simulink</li><li>Arduino</li><li>Multisim</li><li>Proteus</li><li>HTML, CSS, JavaScript</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= RESEARCH ======================= -->
+<section class="panel" id="research" role="tabpanel" aria-label="Research">
+  <div class="wrap">
+    <div class="page-head">
+      <h2>Research</h2>
+      <p>Signals from the body, the road and the vehicle, read with machine learning.</p>
+    </div>
+
+    <div class="sheet">
+      <h3>Research areas</h3>
+      <ul class="ruled">
+        <li><h4>Biomedical signal processing</h4>ECG analysis, QRS detection, arrhythmia and ischemia classification using wavelets, curvelets, ICA, SVM, CNN and neuro-fuzzy (ANFIS) models, including smartphone-based ECG acquisition.</li>
+        <li><h4>Deep learning for intelligent transportation</h4>Pothole detection, real-time traffic control and monitoring, and driver assistance systems.</li>
+        <li><h4>Automotive electronics and electric vehicles</h4>Battery life under different driving styles, remotely drivable electric vehicles, and neural-network control of switched reluctance motor drives.</li>
+        <li><h4>IoT, embedded systems and edge AI</h4>Low-power sensing and inference on microcontrollers such as ESP32 and STM32.</li>
+        <li><h4>Machine learning for healthcare</h4>Postpartum depression detection, and a joint project with a dental college on predicting maxillary canine impaction.</li>
+      </ul>
+    </div>
+
+    <div class="sheet">
+      <div class="cols">
+        <div>
+          <h3>Current projects</h3>
+          <ul class="bullets">
+            <li>A lightweight, edge-deployable medical large language model for resource-constrained healthcare settings.</li>
+            <li>An offline retrieval-augmented generation (RAG) system for edge AI applications.</li>
+            <li>Low-cost wearable AR translation glasses using an ESP32-S3 and cloud-based speech translation.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Plans</h3>
+          <ul class="bullets">
+            <li>At least one journal paper and one conference paper every year.</li>
+            <li>Joint research with M. A. Rangoonwala College of Dental Sciences and Research Centre, Pune, on dental diagnosis problems.</li>
+            <li>An MoU with Pisarv Technologies for internships, projects and consultancy.</li>
+          </ul>
+        </div>
+      </div>
+      <h3>Collaboration and funding</h3>
+      <ul class="plain">
+        <li><strong>M. A. Rangoonwala College of Dental Sciences and Research Centre:</strong> MoU with MIT-WPU, where I am the single point of contact. Joint project on maxillary canine impaction detection and favourability prediction.</li>
+        <li><strong>KPIT Technologies:</strong> part of the Academic Connect and Engagement (PACE) programme, and a consultancy partner.</li>
+        <li><strong>Funding proposals:</strong> submitted to DST and SERB.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= PUBLICATIONS ======================= -->
+<section class="panel" id="publications" role="tabpanel" aria-label="Publications">
+  <div class="wrap">
+    <div class="page-head">
+      <h2>Publications</h2>
+      <p>Journal papers, book chapters and conference papers, newest first. The complete record with citations is on <a href="https://scholar.google.com/citations?user=qMYzU18AAAAJ&hl=en">Google Scholar</a>.</p>
+    </div>
+
+    <div class="sheet">
+      <div class="filters" role="group" aria-label="Filter publications">
+        <button type="button" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-filter="journal" aria-pressed="false">Journal papers</button>
+        <button type="button" data-filter="chapter" aria-pressed="false">Book chapters</button>
+        <button type="button" data-filter="conference" aria-pressed="false">Conference papers</button>
+      </div>
+
+      <div class="pubgroup" data-type="journal">
+        <h3>Journal papers</h3>
+        <ul class="pubs">
+          <li><span class="yr">2025</span><div><p class="cite">S. Bhagwat, K. Kshirsagar, A. Barhatte, S. Patil, &ldquo;Detection of Postpartum Depression using Machine Learning,&rdquo; <i>Journal of Information Systems Engineering and Management</i>, 2025.</p><p class="meta"><span class="tag">Scopus</span><span class="tag">Q4</span><a class="doi" href="https://doi.org/10.52783/jisem.v10i8s.1060">DOI</a></p></div></li>
+          <li><span class="yr">2023</span><div><p class="cite">S. Chougule, A. Barhatte, &ldquo;Smart Pothole Detection System using Deep Learning Algorithms,&rdquo; <i>International Journal of Intelligent Transportation Systems Research</i>, 2023.</p><p class="meta"><span class="tag">Web of Science</span><span class="tag">ESCI</span><span class="tag">Q2</span><a class="doi" href="https://doi.org/10.1007/s13177-023-00363-3">DOI</a></p></div></li>
+          <li><span class="yr">2023</span><div><p class="cite">M. R. Dahake, P. S. Gajjal, A. S. Barhatte, D. N. Malkhede, &ldquo;Experimental exploration of hydrogen fuelled dual fuelled CRDI equipped diesel engine coupled with exhaust gas recirculation using ANN approach,&rdquo; <i>International Journal of Ambient Energy</i>, 45(1), 2023.</p><p class="meta"><span class="tag">Scopus</span><span class="tag">Q2</span><a class="doi" href="https://doi.org/10.1080/01430750.2023.2280732">DOI</a></p></div></li>
+          <li><span class="yr">2023</span><div><p class="cite">M. Gupta, H. Miglani, P. Deo, A. Barhatte, &ldquo;Real-time traffic control and monitoring,&rdquo; <i>e-Prime: Advances in Electrical Engineering, Electronics and Energy</i>, vol. 5, 100211, 2023.</p><p class="meta"><span class="tag">Scopus</span><span class="tag">Web of Science</span><span class="tag">ESCI</span><span class="tag">Q1</span><a class="doi" href="https://doi.org/10.1016/j.prime.2023.100211">DOI</a></p></div></li>
+          <li><span class="yr">2021</span><div><p class="cite">M. Borkar, P. Patil, P. Pandey, P. Kolipaka, R. Komati, A. Barhatte, &ldquo;Bolt-on Autonomous E-Vehicle System,&rdquo; <i>IJRASET</i>, vol. 9, issue VI, June 2021.</p></div></li>
+          <li><span class="yr">2021</span><div><p class="cite">R. V. Kapse, A. S. Barhatte, &ldquo;Smartphone based ECG Acquisition and Analysis,&rdquo; <i>IJRASET</i>, vol. 9, issue VI, June 2021.</p></div></li>
+          <li><span class="yr">2021</span><div><p class="cite">M. Patel, N. Bafna, A. Barhatte, S. Malani, &ldquo;IoT Based Driving Assistance and Mishap Succour System,&rdquo; <i>IOSR Journal of Electronics and Communication Engineering</i>, vol. 16, issue 3, ser. II, pp. 68&ndash;73, May&ndash;June 2021.</p></div></li>
+          <li><span class="yr">2019</span><div><p class="cite">A. Barhatte, M. Dale, R. Ghongade, &ldquo;Cardiac Events Detection using Curvelet Transform,&rdquo; <i>S&#257;dh&#257;n&#257;</i>, 44: 47, 2019.</p><p class="meta"><span class="tag">SCI</span><span class="tag">Q2</span><a class="doi" href="https://doi.org/10.1007/s12046-018-1046-0">DOI</a></p></div></li>
+          <li><span class="yr">2014</span><div><p class="cite">A. Barhatte, R. Ghongade, &ldquo;R-peak detection using Wavelet-Energy Histogram and Adaptive Thresholding,&rdquo; <i>International Journal of Emerging Trends in Electrical and Electronics</i>, vol. 10, issue 10, October 2014.</p></div></li>
+          <li><span class="yr">2014</span><div><p class="cite">J. Joseph, A. Barhatte, &ldquo;Medical Image Fusion Based on Wavelet Transform and Fast Curvelet Transform,&rdquo; <i>International Journal of Design Engineering Research</i>, vol. 2, issue 1, March 2014.</p></div></li>
+          <li><span class="yr">&ndash;</span><div><p class="cite">S. Chougule, A. Barhatte, &ldquo;Survey on Pothole Detection Methods,&rdquo; <i>Grenze International Journal of Engineering and Technology</i>, vol. 8, issue 2, pp. 482&ndash;489.</p><p class="meta"><span class="tag">Scopus</span></p></div></li>
+        </ul>
+      </div>
+
+      <div class="pubgroup" data-type="chapter">
+        <h3>Book chapters</h3>
+        <ul class="pubs">
+          <li><span class="yr">2022</span><div><p class="cite">A. Barhatte, M. Dale, R. Ghongade, &ldquo;ANFIS-Based Cardiac Arrhythmia Classification,&rdquo; in <i>Advances in Deep Learning for Medical Image Analysis</i>, Taylor and Francis, CRC Press, 1st ed., 2022.</p><p class="meta"><a class="doi" href="https://doi.org/10.1201/9781003230540">DOI</a></p></div></li>
+          <li><span class="yr">2022</span><div><p class="cite">R. V. Kapse, A. S. Barhatte, &ldquo;ECG Acquisition Analysis on Smartphone Through Bluetooth and Wireless Communication,&rdquo; in J. S. Raj, K. Kamel, P. Lafata (eds.), <i>Innovative Data Communication Technologies and Application</i>, Lecture Notes on Data Engineering and Communications Technologies, vol. 96, Springer, Singapore.</p><p class="meta"><span class="tag">Scopus</span><a class="doi" href="https://doi.org/10.1007/978-981-16-7167-8_3">DOI</a></p></div></li>
+        </ul>
+      </div>
+
+      <div class="pubgroup" data-type="conference">
+        <h3>Conference papers</h3>
+        <ul class="pubs">
+          <li><span class="yr">2020</span><div><p class="cite">S. Jambhale, S. Malani, A. Barhatte, &ldquo;Impact of Driving Style on Battery Life of the Electric Vehicle,&rdquo; <i>IEEE Pune Section International Conference (PuneCon)</i>, 2020.</p><p class="meta"><span class="tag">IEEE Xplore</span><a class="doi" href="https://doi.org/10.1109/PuneCon50868.2020.9362406">DOI</a></p></div></li>
+          <li><span class="yr">2018</span><div><p class="cite">M. R. Mohidekar, A. Barhatte, &ldquo;Discrimination of Arrhythmia Using a Smartphone,&rdquo; <i>2nd International Conference on Intelligent Computing and Control Systems (ICICCS)</i>, pp. 1684&ndash;1687, 2018.</p><p class="meta"><span class="tag">IEEE Xplore</span><a class="doi" href="https://doi.org/10.1109/ICCONS.2018.8663237">DOI</a></p></div></li>
+          <li><span class="yr">2017</span><div><p class="cite">N. Gawande, A. Barhatte, &ldquo;Heart Disease Classification Using Convolutional Neural Network,&rdquo; <i>2nd International Conference on Communication and Electronics Systems (ICCES)</i>, pp. 17&ndash;20, 2017.</p><p class="meta"><span class="tag">IEEE Xplore</span><a class="doi" href="https://doi.org/10.1109/CESYS.2017.8321264">DOI</a></p></div></li>
+          <li><span class="yr">2017</span><div><p class="cite">S. Haware, A. Barhatte, &ldquo;Retina based biometric identification using SURF and ORB feature descriptors,&rdquo; <i>International Conference on Microelectronic Devices, Circuits and Systems (ICMDCS)</i>, 2017.</p><p class="meta"><span class="tag">IEEE Xplore</span></p></div></li>
+          <li><span class="yr">2017</span><div><p class="cite">S. Tandale, A. Barhatte, R. Ghongade, M. Dale, &ldquo;Arrhythmia Classification Using Neuro-Fuzzy Approach,&rdquo; <i>3rd International Conference on Advances in Computing, Communication and Automation (ICACCA)</i>, 2017.</p><p class="meta"><span class="tag">IEEE Xplore</span><a class="doi" href="https://doi.org/10.1109/ICACCAF.2017.8344712">DOI</a></p></div></li>
+          <li><span class="yr">2016</span><div><p class="cite">A. S. Barhatte, R. Ghongade, S. V. Tekale, &ldquo;Noise analysis of ECG signal using fast ICA,&rdquo; <i>IEEE Conference on Advances in Signal Processing (CASP)</i>, pp. 118&ndash;122, 2016.</p><p class="meta"><span class="tag">IEEE Xplore</span><a class="doi" href="https://doi.org/10.1109/CASP.2016.7746149">DOI</a></p></div></li>
+          <li><span class="yr">2016</span><div><p class="cite">A. S. Barhatte, R. Ghongade, S. L. Mane, &ldquo;Analysis of ST Segment in ECG for Detection of Ischemia,&rdquo; <i>3rd International Conference on Electrical, Electronics, Engineering Trends, Communication, Optimization and Sciences (EEECOS)</i>, pp. 594&ndash;598, 2016.</p></div></li>
+          <li><span class="yr">2015</span><div><p class="cite">A. Barhatte, R. Ghongade, &ldquo;A multiclass cardiac events classifier using clustering and modified adaptive neuro-fuzzy inference system,&rdquo; <i>IEEE International Conference on Research in Computational Intelligence and Communication Networks (ICRCICN)</i>, pp. 90&ndash;95, 2015.</p><p class="meta"><span class="tag">IEEE Xplore</span><a class="doi" href="https://doi.org/10.1109/ICRCICN.2015.7434216">DOI</a></p></div></li>
+          <li><span class="yr">2015</span><div><p class="cite">A. S. Barhatte, R. Ghongade, A. S. Thakare, &ldquo;QRS complex detection and arrhythmia classification using SVM,&rdquo; <i>IEEE Conference on Communication, Control and Intelligent Systems (CCIS)</i>, pp. 239&ndash;243, 2015.</p><p class="meta"><span class="tag">IEEE Xplore</span><a class="doi" href="https://doi.org/10.1109/CCIntelS.2015.7437915">DOI</a></p></div></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sheet">
+      <h3>Author profiles</h3>
+      <ul class="links">
+        <li><a href="https://scholar.google.com/citations?user=qMYzU18AAAAJ&hl=en">Google Scholar<small>Citations and full list</small></a></li>
+        <li><a href="https://www.scopus.com/authid/detail.uri?authorId=57189094724">Scopus<small>Author ID 57189094724</small></a></li>
+        <li><a href="https://www.webofscience.com/wos/author/record/O-2371-2019">Web of Science<small>Researcher record</small></a></li>
+        <li><a href="https://www.researchgate.net/profile/Alka-Barhatte">ResearchGate<small>Papers and questions</small></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= TEACHING ======================= -->
+<section class="panel" id="teaching" role="tabpanel" aria-label="Teaching">
+  <div class="wrap">
+    <div class="page-head">
+      <h2>Teaching</h2>
+      <p>Students learn the idea in class, then build it in the lab.</p>
+    </div>
+
+    <div class="sheet">
+      <div class="cols">
+        <div>
+          <h3>Courses I teach</h3>
+          <ul class="plain">
+            <li>Artificial Intelligence and Machine Learning</li>
+            <li>Deep Neural Networks</li>
+            <li>Data Structures and Algorithms</li>
+            <li>Object-Oriented Programming</li>
+            <li>Linux Based Python Programming</li>
+            <li>Python Programming for Data Science (PGD-AIML)</li>
+            <li>Artificial Neural Networks (ME, Electronics Digital Systems)</li>
+            <li>Embedded System Design and Software Lab (M.Tech, ECE)</li>
+            <li>Automotive Electronics</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Courses I have also taught</h3>
+          <ul class="plain">
+            <li>Electronic Devices and Circuits</li>
+            <li>Network Synthesis and Filter Design</li>
+            <li>Computer Organization</li>
+            <li>Signals and Systems</li>
+            <li>System Programming and Operating Systems</li>
+            <li>Programming Techniques</li>
+            <li>Fuzzy Logic and Graph Theory</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="sheet">
+      <div class="cols">
+        <div>
+          <h3>In the classroom</h3>
+          <ul class="bullets">
+            <li>Problem-based learning, so students apply each idea straight away.</li>
+            <li>Animations and simulation videos to make processes visible.</li>
+            <li>Short quizzes on selected topics to build analytical skills.</li>
+            <li>Coding competitions in class for peer learning.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>In the lab</h3>
+          <ul class="bullets">
+            <li>Mini projects: Java GUI, Qt and SQL back ends for object-oriented programming; MATLAB Simulink designs for automotive electronics.</li>
+            <li>Students write code on paper, get it checked, and only then implement it.</li>
+            <li>Shared installation guides and recorded walkthroughs.</li>
+            <li>Practice on HackerRank, LeetCode, CodeChef and CodeTantra to prepare for placements.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="sheet">
+      <div class="cols">
+        <div>
+          <h3>Syllabi I have designed</h3>
+          <ul class="bullets">
+            <li>Artificial Intelligence and Machine Learning</li>
+            <li>Full Stack Development</li>
+            <li>Web and Mobile App Development</li>
+            <li>Java Programming</li>
+            <li>Data Structures and Algorithms</li>
+            <li>Object-Oriented Programming</li>
+            <li>Programming Techniques</li>
+            <li>Fuzzy Logic and Graph Theory</li>
+            <li>Automotive Electronics, Automotive Embedded Systems and Agriculture Electronics</li>
+            <li>Software Lab (M.Tech)</li>
+            <li>Artificial Neural Network and Fuzzy Systems (ME, SPPU Board of Studies)</li>
+          </ul>
+          <p class="small muted" style="margin-top:12px">I also coordinated the 2021 restructuring of the SY ECE and AI-ML syllabus when the university moved from trimesters to semesters.</p>
+        </div>
+        <div>
+          <h3>Labs I run and built</h3>
+          <ul class="bullets">
+            <li>In-charge of Software Programming Labs A and B.</li>
+            <li>Developed the Automotive Electronics lab for final-year B.Tech (ECE), using Arduino, Raspberry Pi and MATLAB Simulink.</li>
+            <li>Wrote the lab manuals and capstone project documentation.</li>
+          </ul>
+          <h3 style="margin-top:26px">Coordination</h3>
+          <ul class="bullets">
+            <li>Subject coordinator for Data Structures and Algorithms, Object-Oriented Programming and Automotive Electronics.</li>
+            <li>B.Tech coordinator, and earlier the Capstone Project coordinator.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="sheet">
+      <h3>Videos and course material</h3>
+      <p>Lecture and lab videos are on my <a href="https://www.youtube.com/@alkabarhatte544">YouTube channel</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= SUPERVISION ======================= -->
+<section class="panel" id="supervision" role="tabpanel" aria-label="Supervision">
+  <div class="wrap">
+    <div class="page-head">
+      <h2>Supervision</h2>
+      <p>Doctoral scholars, project students and competition teams.</p>
+    </div>
+
+    <div class="sheet">
+      <h3>PhD supervision</h3>
+      <p>I am an approved PhD supervisor in Electronics and Communication Engineering. Current doctoral research under my guidance:</p>
+      <ul class="ruled" style="margin-top:14px">
+        <li><h4>Underwater trash detection</h4>Deep learning algorithms for detecting objects and debris underwater.</li>
+        <li><h4>Hydrogen fuel cell electric vehicles</h4>Advanced energy management for hybrid fuel cell vehicles.</li>
+        <li><h4>Pulmonary disease applications</h4>Biomedical applications for pulmonary diseases.</li>
+      </ul>
+      <p class="small muted" style="margin-top:14px">Interested in doctoral work with me? Email your CV and a short note on the problem you want to study.</p>
+    </div>
+
+    <div class="sheet">
+      <h3>Student projects</h3>
+      <p>I have guided more than 40 student projects (30+ undergraduate, 10+ postgraduate) across AI and machine learning, deep learning, IoT, image processing, biomedical signal processing and automotive electronics. Selected industry-linked projects:</p>
+      <div class="tbl-wrap" style="margin-top:16px">
+      <table>
+        <thead><tr><th>Industry partner</th><th>Project</th><th>Year</th><th>Programme</th></tr></thead>
+        <tbody>
+          <tr><td>Devise Electronics Pvt. Ltd.</td><td>Elongation of battery life of the electric vehicle based on driving style</td><td>2020&ndash;21</td><td>M.Tech (VLSI Design and Embedded Systems)</td></tr>
+          <tr><td>DRDO</td><td>Design of drive train for an electric all-terrain vehicle with remote drivability</td><td>2021&ndash;22</td><td>B.Tech (ECE)</td></tr>
+          <tr><td>Devise Electronics Pvt. Ltd.</td><td>Automotive black box system for accident analysis using ESP32</td><td>2020&ndash;21</td><td>B.Tech (ECE)</td></tr>
+          <tr><td>ARAI, Pune</td><td>Cloud-based battery parameter analysis</td><td>2019&ndash;20</td><td>B.E. (E&amp;TC)</td></tr>
+          <tr><td>VSMART Thermotech Pvt. Ltd., Pune</td><td>Central monitoring system, Smart Manager</td><td>2018&ndash;19</td><td>B.E. (E&amp;TC)</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+    <div class="sheet">
+      <div class="cols">
+        <div>
+          <h3>Internships</h3>
+          <p>I have mentored more than 30 students through internships and arranged internships with Anetronn, Teamnet Solutions, Manastik Technologies, Ni2 Design, Sisai Technologies and Pisarv Technologies, among others. I also completed a two-month industry internship myself, to understand what employers expect.</p>
+        </div>
+        <div>
+          <h3>Competitions</h3>
+          <ul class="bullets">
+            <li>Hardware-track team at the Smart India Hackathon 2025 Grand Finale, representing MIT-WPU.</li>
+            <li>Teams for Smart India Hackathon and Kaggle competitions.</li>
+            <li>Faculty mentor for the NASA Space Apps Challenge hackathon.</li>
+            <li>Jury member for hackathon idea presentations at MIT-WPU.</li>
+            <li>Mentor to Team Bolt-on for automatic path detection.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= PROJECTS ======================= -->
+<section class="panel" id="projects" role="tabpanel" aria-label="Projects">
+  <div class="wrap">
+    <div class="page-head">
+      <h2>Projects, patents and consultancy</h2>
+      <p>Funded builds, intellectual property and work done with industry.</p>
+    </div>
+
+    <div class="sheet">
+      <h3>Innovation projects funded by the university</h3>
+      <ul class="ruled">
+        <li><h4>Remotely driven multi-utility electric vehicle (E-Rath)</h4>Funded with Rs. 1,12,000. A vehicle that can be driven remotely for utility tasks, and the subject of a Marathi newspaper article.</li>
+        <li><h4>Forward-view pothole guidance for Indian passenger cars</h4>Funded with Rs. 23,000. See the related smart pothole detection paper under Publications.</li>
+        <li><h4>Smart traffic monitoring and controlling</h4>Funded with Rs. 20,000. A traffic monitoring and control system, shown in the video below.</li>
+      </ul>
+      <div class="video" style="margin-top:18px">
+        <iframe src="https://www.youtube-nocookie.com/embed/DCxwnJ7Drn8" title="Smart traffic monitoring and controlling project" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="sheet">
+      <div class="cols">
+        <div>
+          <h3>Patents</h3>
+          <ul class="plain">
+            <li><strong>Published (Indian patent):</strong> Artificial Neural Network Associated Advanced Vector Control of SRM Drive for Electric Vehicle.</li>
+            <li><strong>Proposal submitted:</strong> AI-Enabled Smart Pesticide Dispensing System for Sustainable Crop Management.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Consultancy</h3>
+          <p>Rs. 1.44 lakh received in total.</p>
+          <ul class="plain" style="margin-top:8px">
+            <li>KPIT Technologies: Rs. 44,000</li>
+            <li>Gunadhya Software Solutions Pvt. Ltd., Pune: Rs. 1,00,000</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="sheet">
+      <h3>Industry connections</h3>
+      <ul class="plain">
+        <li><strong>KPIT PACE programme:</strong> two weeks full time on the Program for Academic Collaboration and Engagement, December 2016.</li>
+        <li><strong>Capgemini TechFiesta 2023:</strong> attended the campus-to-corporate connect day in Pune.</li>
+        <li><strong>Gestamp:</strong> visited for automated guided vehicle consultancy.</li>
+        <li><strong>Industry study tours:</strong> Bangalore, Mysore, Ooty, ISRO, GMRT and others.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= SERVICE ======================= -->
+<section class="panel" id="service" role="tabpanel" aria-label="Service">
+  <div class="wrap">
+    <div class="page-head">
+      <h2>Service</h2>
+      <p>Reviewing, organising events and keeping the department's quality systems running.</p>
+    </div>
+
+    <div class="sheet">
+      <div class="cols">
+        <div>
+          <h3>Peer review</h3>
+          <ul class="bullets">
+            <li>Elsevier: <i>Computers in Biology and Medicine</i></li>
+            <li>Springer: <i>International Journal of Intelligent Transportation Systems Research</i> (two papers)</li>
+            <li>Springer: <i>Journal of The Institution of Engineers (India): Series D</i></li>
+            <li>ICACCP 2017, ICRCICN 2017 and IEEE PuneCon 2019</li>
+          </ul>
+          <h3 style="margin-top:26px">Examination work</h3>
+          <p>External paper setter at VIIT Pune and Bharati Vidyapeeth Deemed University, and external practical examiner at institutes under SPPU. I have also prepared SPPU question banks for Data Structures and Automotive Electronics.</p>
+        </div>
+        <div>
+          <h3>Conferences organised</h3>
+          <ul class="plain">
+            <li>IEEE PuneCon 2019, organising team and coordinator</li>
+            <li>IEEE WIOT 2017, organising team</li>
+            <li>IEEE IOTA 2016, organising team</li>
+            <li>SITACS 2013, organising team</li>
+            <li>National workshop on GPU programming using CUDA, 30&ndash;31 August 2018, coordinator</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="sheet">
+      <h3>Workshops and talks organised</h3>
+      <ul class="ruled">
+        <li><span class="when">January 2025</span>One-week faculty development programme on designing edge-AI applications using STM32.</li>
+        <li><span class="when">January 2022</span>Webinar on publishing papers, indexing and citations for B.Tech, M.Tech and PhD students and faculty.</li>
+        <li><span class="when">Ongoing</span>Student workshops on Python and on C and C++, a capstone project competition judged by industry experts, and guest lectures on MATLAB and Simulink, applications of data structures, parallel programming with CUDA C, and vehicle transmission and braking.</li>
+      </ul>
+    </div>
+
+    <div class="sheet">
+      <h3>Student immersion programmes</h3>
+      <ul class="ruled">
+        <li><span class="when">February 2025</span>Rural immersion at Ralegan Siddhi with 65 students.</li>
+        <li><span class="when">June to July 2024</span>13-day National Academic Immersion Programme at IIT Jodhpur with more than 150 SY ECE and AI-ML students.</li>
+        <li><span class="when">October 2023</span>Five-day international study tour to Dubai Expo 2023 with 33 final-year students.</li>
+        <li><span class="when">January 2023</span>10-day National Academic Immersion Programme at IIIT Delhi with about 100 students.</li>
+      </ul>
+    </div>
+
+    <div class="sheet">
+      <h3>Institutional roles</h3>
+      <div class="cols">
+        <div>
+          <h4>Now</h4>
+          <ul class="bullets">
+            <li>IQAC and NAAC coordinator for the department</li>
+            <li>Secretary, Programme Monitoring and Quality Improving Committee (PMQIC)</li>
+            <li>B.Tech coordinator and term-end report coordinator</li>
+            <li>NAAC Criteria 7 coordinator</li>
+            <li>Software programming lab in-charge</li>
+            <li>University IQAC team member and admission counselling committee member</li>
+            <li>Overall coordinator for the SoET Convocation 2025</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Earlier</h4>
+          <ul class="bullets">
+            <li>NAAC Criteria 2 coordinator for the university and the school</li>
+            <li>NBA and IET accreditation criteria coordinator, NIRF and ranking coordinator</li>
+            <li>Capstone Project coordinator, PhD panel coordinator</li>
+            <li>Admission and document verification committees, 2016 to 2020</li>
+            <li>Syllabus restructuring cluster coordinator</li>
+            <li>Class teacher and mentor</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= TRAINING ======================= -->
+<section class="panel" id="training" role="tabpanel" aria-label="Training">
+  <div class="wrap">
+    <div class="page-head">
+      <h2>Training and certifications</h2>
+      <p>Courses and faculty development programmes I have completed, newest first.</p>
+    </div>
+
+    <div class="sheet">
+      <ul class="tl">
+        <li><span class="when">2026</span><h4>Tata Technologies TTL Techpulse-2026</h4>Train-the-trainer programme on in-vehicle communication and model-based design, hands-on with Vector CANoe and MATLAB Simulink.</li>
+        <li><span class="when">2025</span><h4>Designing Edge-AI Applications using STM32</h4>One-week FDP, 20&ndash;24 January 2025, at the department.</li>
+        <li><span class="when">2024</span>
+          <h4>Generative AI and LLM</h4>FDP organised by the department with IET Pune and Cognizant, 23&ndash;27 September 2024.
+          <h4 style="margin-top:10px">Other</h4>Simplilearn Full-Stack Development 101 (November 2024), MathWorks Automotive Conference 2024, and IBM&rsquo;s Introduction to Artificial Intelligence on Coursera.</li>
+        <li><span class="when">2023</span><h4>Deep Learning Applications on AI/DL machine</h4>One-week FDP, 7&ndash;11 August 2023. Also the EV Sprint class by Devise Electronics, Simplilearn&rsquo;s machine learning algorithms course, and the MathWorks Automotive Conference 2023.</li>
+        <li><span class="when">2022</span><h4>PG Program in Data Science</h4>11-month online programme by RISE and KPMG in India, July 2021 to November 2022. Also an FDP on AI and Machine Learning by WPURISE (March 2022) and the Udemy course on automotive computerized diagnostics.</li>
+        <li><span class="when">2021</span><h4>Linux Based Python Laboratory</h4>FDP at MIT-WPU, 21 June to 2 July 2021. Also a Trends and Innovations in Healthcare FDP (October 2021) and a two-week training on electric vehicle technology.</li>
+        <li><span class="when">2020</span><h4>ATAL Academy programmes</h4>Emerging Technologies (IoT, robotics and UAV) at C-DAC, and Cloud Technology at Government Engineering College Gandhinagar.</li>
+        <li><span class="when">2019 and earlier</span><h4>Research and embedded systems</h4>Research Methodologies and Advanced Optimization Techniques (IET, 2019); NPTEL Introduction to Internet of Things, IIT Kanpur (2018); Machine Learning using MATLAB (2018); Soft Computing (2015); RTOS and Advanced Embedded System Design (2013); Technology CAD for VLSI Design, IIT Kharagpur (2008).</li>
+      </ul>
+    </div>
+
+    <div class="sheet">
+      <h3>Teaching skills</h3>
+      <p>Completed the Mission 10X certification programme (Wipro and MIT Pune), covering High-Impact Presentations by Dale Carnegie and Innovative Teaching Methodologies by the University of Cambridge, and a High Impact Presentation Skills workshop by Dale Carnegie in June 2008.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= CONTACT ======================= -->
+<section class="panel" id="contact" role="tabpanel" aria-label="Contact">
+  <div class="wrap">
+    <div class="page-head">
+      <h2>Contact</h2>
+      <p>Students, collaborators and industry partners are welcome to write.</p>
+    </div>
+
+    <div class="sheet">
+      <div class="cols">
+        <div>
+          <h3>Write to me</h3>
+          <p><a href="mailto:alka.barhatte@mitwpu.edu.in" style="font:600 1.15rem var(--sans)">alka.barhatte@mitwpu.edu.in</a></p>
+          <p class="small muted">For PhD enquiries, include your CV and a short note on the problem you want to work on.</p>
+          <div class="btns" style="margin-top:18px">
+            <a class="btn solid" href="mailto:alka.barhatte@mitwpu.edu.in">Send an email</a>
+          </div>
+        </div>
+        <div>
+          <h3>Office</h3>
+          <p>Department of Electrical and Electronics Engineering<br>Dr. Vishwanath Karad MIT World Peace University<br>Rambaug Colony, Kothrud<br>Pune 411038, Maharashtra, India</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sheet">
+      <h3>Find me online</h3>
+      <ul class="links">
+        <li><a href="https://mitwpu.edu.in/faculty/alka-surendra-barhatte">University profile<small>MIT-WPU faculty page</small></a></li>
+        <li><a href="https://scholar.google.com/citations?user=qMYzU18AAAAJ&hl=en">Google Scholar<small>Publications and citations</small></a></li>
+        <li><a href="https://in.linkedin.com/in/dr-alka-barhatte-b3830837">LinkedIn<small>Professional profile</small></a></li>
+        <li><a href="https://www.youtube.com/@alkabarhatte544">YouTube<small>Lectures and project videos</small></a></li>
+        <li><a href="https://www.scopus.com/authid/detail.uri?authorId=57189094724">Scopus<small>Author record</small></a></li>
+        <li><a href="https://www.researchgate.net/profile/Alka-Barhatte">ResearchGate<small>Research profile</small></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">&copy; <span id="yr">2026</span> Dr. Alka Surendra Barhatte. Personal academic website; for official information see the <a href="https://mitwpu.edu.in/faculty/alka-surendra-barhatte">university profile</a>.</div>
+</footer>
+
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.tabs a'));
+  var panels=[].slice.call(document.querySelectorAll('.panel'));
+  var nav=document.querySelector('.tabs');
+  var names={};
+  tabs.forEach(function(t){names[t.dataset.tab]=t.textContent});
+
+  function show(id){
+    if(!names[id]) id='home';
+    panels.forEach(function(p){p.classList.toggle('on',p.id===id)});
+    tabs.forEach(function(t){
+      var on=t.dataset.tab===id;
+      t.setAttribute('aria-selected',on?'true':'false');
+      t.tabIndex=on?0:-1;
+      if(on && nav.scrollWidth>nav.clientWidth && nav.scrollTo){nav.scrollTo({left:t.offsetLeft-nav.clientWidth/2+t.clientWidth/2,behavior:'smooth'})}
+    });
+    document.title=(id==='home'?'':names[id]+' | ')+'Dr. Alka Surendra Barhatte, MIT-WPU Pune';
+    window.scrollTo(0,0);
+  }
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1))});
+  show(location.hash.slice(1)||'home');
+
+  /* arrow keys move between tabs */
+  nav.addEventListener('keydown',function(e){
+    var i=tabs.indexOf(document.activeElement);
+    if(i<0||(e.key!=='ArrowRight'&&e.key!=='ArrowLeft'))return;
+    var n=tabs[(i+(e.key==='ArrowRight'?1:tabs.length-1))%tabs.length];
+    n.focus();e.preventDefault();
+  });
+
+  /* publication filter */
+  var fb=[].slice.call(document.querySelectorAll('.filters button'));
+  var groups=[].slice.call(document.querySelectorAll('.pubgroup'));
+  fb.forEach(function(b){
+    b.addEventListener('click',function(){
+      fb.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
+      groups.forEach(function(g){g.hidden=!(b.dataset.filter==='all'||g.dataset.type===b.dataset.filter)});
+    });
+  });
+
+  document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
